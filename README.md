@@ -1,7 +1,7 @@
 # Database Design
 
-#this diagram in db forge
-![alt text](Diagram1.bmp)
+## Diagram in DBForge
+![DBForge ER Diagram](Diagram1.bmp)
 
-#this is in php my admin panel 
-![alt text](image.png)
+## Diagram in phpMyAdmin
+![phpMyAdmin Table Structure](image.png)
