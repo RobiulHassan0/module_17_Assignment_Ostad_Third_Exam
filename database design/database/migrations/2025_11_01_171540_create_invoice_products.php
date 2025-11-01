@@ -11,7 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::rename('categories', 'product_categories');
+        Schema::create('invoice_products', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -19,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::rename('product_categories', 'categories');
+        Schema::dropIfExists('invoice_products');
     }
 };
