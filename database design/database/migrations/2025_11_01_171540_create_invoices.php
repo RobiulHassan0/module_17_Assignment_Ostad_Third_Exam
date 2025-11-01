@@ -13,6 +13,20 @@ return new class extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
+            $table->string('total');
+            $table->string('discount');
+            $table->string('vat');  
+            $table->string('payable');
+
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('customer_id');
+
+            $table->foreign('user_id')->references('id')->
+            on('users')->restrictOnDelete()->cascadeOnUpdate();
+
+            $table->foreign('customer_id')->references('id')
+            ->on('customers')->restrictOnDelete()->restrictOnUpdate();
+            
             $table->timestamps();
         });
     }
