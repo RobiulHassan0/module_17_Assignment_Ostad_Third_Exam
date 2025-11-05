@@ -8,7 +8,7 @@ This document provides an overview of the database structure for the project, in
 
 The following diagram represents the database structure as visualized in **DBForge Studio for MySQL**. It shows all tables, primary keys, foreign keys, and relationships clearly.
 
-![DBForge ER Diagram](Diagram1.bmp)
+img.readme/Diagram1.bmp
 
 ---
 
@@ -16,4 +16,10 @@ The following diagram represents the database structure as visualized in **DBFor
 
 The screenshot below shows the same database structure in **phpMyAdmin**, highlighting the table columns and their types.
 
-![phpMyAdmin Table Structure](image.png)
+img.readme/image.png
+
+#Laravel Template 
+
+## click the link below to watch project video
+
+[![Watch Video](img.readme/thumbnail.png)](https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing)
